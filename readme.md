@@ -392,3 +392,5 @@ Average Latency: 2.46 ms
 * Matplotlib
 * Joblib
 
+--- 
+This project was developed as part of the UST Semicon Data Science Intern selection process. I am grateful for the opportunity to work on this assignment.
