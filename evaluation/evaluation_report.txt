@@ -1,0 +1,41 @@
+CLASSIFICATION REPORT
+============================================================
+                     precision    recall  f1-score   support
+
+       activate_dnd     0.8750    0.9333    0.9032        15
+     deactivate_dnd     0.9286    0.7647    0.8387        17
+       decline_call     1.0000    0.8235    0.9032        17
+decrease_brightness     1.0000    0.8750    0.9333        16
+    decrease_volume     0.8710    0.7297    0.7941        37
+increase_brightness     1.0000    1.0000    1.0000        17
+    increase_volume     1.0000    0.8235    0.9032        34
+          next_song     1.0000    0.8125    0.8966        16
+       out_of_scope     0.5513    0.9773    0.7049        44
+        pause_music     1.0000    0.7778    0.8750        18
+       pick_up_call     0.9333    0.8235    0.8750        17
+         play_music     0.8421    1.0000    0.9143        16
+      previous_song     1.0000    0.8824    0.9375        17
+      start_vehicle     1.0000    0.7333    0.8462        15
+       stop_vehicle     0.9231    0.7500    0.8276        16
+
+           accuracy                         0.8494       312
+          macro avg     0.9283    0.8471    0.8769       312
+       weighted avg     0.8958    0.8494    0.8579       312
+
+Overall Accuracy: 0.8494
+
+OOS EVALUATION
+============================================================
+OOS Rejection Rate: 0.9773
+False Rejection Rate: 0.1306
+
+============================================================
+NOISE ROBUSTNESS ANALYSIS
+============================================================
+asr_noise            Accuracy: 0.8590 | Samples: 78`
+char_noise           Accuracy: 0.5750 | Samples: 40
+clean                Accuracy: 0.9130 | Samples: 46
+dropped              Accuracy: 0.7619 | Samples: 21
+filler               Accuracy: 1.0000 | Samples: 46
+hard_negative        Accuracy: 1.0000 | Samples: 6
+paraphrase           Accuracy: 0.8667 | Samples: 75
