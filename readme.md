@@ -2,11 +2,9 @@
 
 ## Overview
 
-This project implements a lightweight, fully offline semantic command classification system for automotive and IoT voice-control applications.
+This project implements a lightweight semantic command classifier for automotive and IoT voice-control systems. Given text from an external ASR system, the classifier identifies the intended command from a predefined set of supported actions and rejects unrelated queries using Out-of-Scope (OOS) detection.
 
-The system receives text from an Automatic Speech Recognition (ASR) engine and classifies it into predefined commands while rejecting unrelated queries using an Out-of-Scope (OOS) detection mechanism.
-
-The solution is optimized for edge deployment using ONNX export and INT8 quantization, enabling fast and efficient CPU inference without requiring internet connectivity.
+The system is designed to handle command variations and noisy transcriptions while remaining suitable for edge deployment through ONNX export and INT8 quantization.
 
 ---
 
@@ -240,6 +238,32 @@ Applies INT8 quantization to reduce model size and improve inference speed on ed
 ```bash
 python quantize_onnx.py
 ```
+## Model Optimization and Deployment
+
+### ONNX Export
+
+The trained model was exported to ONNX to make it easier to deploy and run efficiently on different platforms without relying on the original training environment.
+
+### INT8 Quantization
+
+After ONNX export, INT8 quantization was applied to reduce model size and improve inference speed for edge deployment.
+
+### Results
+
+| Model                | Size     |
+| -------------------- |----------|
+| Original ONNX Model  | 86.18 MB |
+| Quantized ONNX Model | 21.79 MB |
+
+**Model size reduced by 74.72%.**
+
+### Deployment Performance
+
+* Average CPU Latency: **2.46 ms**
+* Fully Offline Inference: **Supported**
+* Edge Deployment Ready: **Yes**
+
+The final quantized model is smaller, faster, and suitable for real-time command classification on resource-constrained devices.
 
 ---
 
