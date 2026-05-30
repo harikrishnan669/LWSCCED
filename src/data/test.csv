@@ -1,0 +1,313 @@
+text,label,source
+forward to de next song,next_song,asr_noise
+i want to hang up the incoming call,decline_call,paraphrase
+higher volum,increase_volume,asr_noise
+previous song please,previous_song,clean
+don't want to take call,decline_call,asr_noise
+engibe on,start_vehicle,char_noise
+like rastha dikhao,out_of_scope,filler
+tell me a joke,out_of_scope,clean
+volume down hmm,decrease_volume,filler
+can you reject the calling,decline_call,paraphrase
+remind me to buy milk,out_of_scope,clean
+"hey, music band karo",pause_music,paraphrase
+pausr the musics,pause_music,char_noise
+"hey, pause the song",pause_music,paraphrase
+zyada loud like karo well,increase_volume,filler
+i want to answer this call,pick_up_call,clean
+pick up the call,pick_up_call,clean
+what is the weather today,out_of_scope,clean
+can you who is the prime minister of india,out_of_scope,paraphrase
+call hthao,pick_up_call,char_noise
+activate um do not disturb,activate_dnd,asr_noise
+cajcel do not disturb,deactivate_dnd,char_noise
+volume,increase_volume,dropped
+pause song,pause_music,dropped
+decline err karo call,decline_call,filler
+convert dollars to rupees um actually,out_of_scope,filler
+make it louder,increase_volume,clean
+abhi kitna time lagega basically actually,out_of_scope,filler
+turn hmm off do not disturb,deactivate_dnd,filler
+start de vehicle,start_vehicle,asr_noise
+volumd down karo,decrease_volume,char_noise
+pichla song chalao hmm,previous_song,asr_noise
+attend te calling,pick_up_call,asr_noise
+please activate do not disturb,activate_dnd,clean
+um lower the volume,decrease_volume,filler
+"hey, turn on the engine",start_vehicle,paraphrase
+wolume up karo,increase_volume,asr_noise
+i want do not disturb off uh,deactivate_dnd,filler
+well start playing music like,play_music,filler
+turn do disturb,activate_dnd,dropped
+pause playback like,pause_music,filler
+"hey, play song please",play_music,paraphrase
+i want to car band kar do,stop_vehicle,paraphrase
+"hey, gaadi band karo",stop_vehicle,paraphrase
+pleasf to activate dnd,activate_dnd,char_noise
+volume up,increase_volume,clean
+like uh make it brighter,increase_brightness,filler
+like turn actually on the air conditioning,out_of_scope,filler
+please stop the car engine now,stop_vehicle,hard_negative
+hmm start musics please,play_music,asr_noise
+put not off,deactivate_dnd,dropped
+um play song,next_song,asr_noise
+you knov dismiss the call,decline_call,asr_noise
+can you open google maps,out_of_scope,paraphrase
+do disturb,activate_dnd,dropped
+make well basically louder,increase_volume,filler
+i want to boost the volume,increase_volume,paraphrase
+the previous,previous_song,dropped
+turn off engine,stop_vehicle,asr_noise
+turn on music,play_music,asr_noise
+"hey, rewind to the previous song",previous_song,paraphrase
+please skip song,next_song,paraphrase
+in crease the volume,increase_volume,asr_noise
+please music chalao,play_music,paraphrase
+lower kind of volume,decrease_volume,filler
+well uh call attend karo,pick_up_call,filler
+play de music,play_music,asr_noise
+agla song chalao,next_song,clean
+can you bring the sound up,increase_volume,paraphrase
+i want to sound louder,increase_volume,paraphrase
+brightness down please,decrease_brightness,clean
+engine err on karo err,start_vehicle,filler
+go to the previous track,previous_song,clean
+previous the sonv,previous_song,char_noise
+yhoda kam karo,decrease_volume,char_noise
+increase display brightness,increase_brightness,clean
+"hey, less volume",decrease_volume,paraphrase
+sound quietdr,decrease_volume,char_noise
+ac on,out_of_scope,dropped
+rewind to previus song,previous_song,asr_noise
+lower the brightness a bit,decrease_brightness,hard_negative
+uh up,increase_volume,filler
+off te do not disturb mode,deactivate_dnd,asr_noise
+uh disable do not dis turb mode,deactivate_dnd,asr_noise
+i want to stop the song please,pause_music,paraphrase
+you know how like long until i reach home,out_of_scope,filler
+call cut um karo,decline_call,asr_noise
+i want to ac on karo,out_of_scope,paraphrase
+play the previous somg,previous_song,char_noise
+please turn the car off,stop_vehicle,paraphrase
+play um please,play_music,asr_noise
+mowe to next song,next_song,asr_noise
+"hey, sound is too low",increase_volume,paraphrase
+well navigate to the hmm airport,out_of_scope,filler
+kill the engine so,stop_vehicle,filler
+shut down kind of vehical,stop_vehicle,asr_noise
+play the song before this,previous_song,clean
+can you disable do not disturb mode,deactivate_dnd,paraphrase
+"hey, search for nearby hospitals",out_of_scope,paraphrase
+play the musics,play_music,clean
+"hey, up the sound",increase_volume,paraphrase
+"hey, louder please",increase_volume,paraphrase
+ignore the calk,decline_call,char_noise
+turn up the brightness err,increase_brightness,asr_noise
+i want to who is the prime minister of india,out_of_scope,paraphrase
+please starh the engine,start_vehicle,char_noise
+next you knov song plz,next_song,asr_noise
+can you make it dimmer,decrease_brightness,paraphrase
+paws playback you,pause_music,asr_noise
+i want to turn the car on,start_vehicle,paraphrase
+please pause music,pause_music,asr_noise
+"hey, increase the sounds",increase_volume,paraphrase
+dnd band karo,deactivate_dnd,clean
+less brightness please hmm,decrease_brightness,filler
+thoda kam bright karo,decrease_brightness,clean
+"hey, answer the incoming call",pick_up_call,paraphrase
+basically um less volume,decrease_volume,filler
+previus please,previous_song,asr_noise
+too quiet so,increase_volume,asr_noise
+more volume,increase_volume,clean
+i need mpre volume,increase_volume,char_noise
+increase,increase_volume,dropped
+set te temperature to twenty two degrees,out_of_scope,asr_noise
+olay again from start,previous_song,char_noise
+um boost te volum,increase_volume,asr_noise
+rastha dkkhao,out_of_scope,char_noise
+on the music err,play_music,filler
+please play the last song,previous_song,paraphrase
+more brightness please,increase_brightness,clean
+reject the incoming call please,decline_call,hard_negative
+remind me to actually buy milk,out_of_scope,filler
+send a text to john,out_of_scope,clean
+sound quietfr,decrease_volume,char_noise
+plz stop of engine,stop_vehicle,asr_noise
+please thoda zyada brightness karo,increase_brightness,paraphrase
+brightness kam jaro,decrease_brightness,char_noise
+turn on do not distutb,activate_dnd,char_noise
+raise the screen brightness,increase_brightness,clean
+engine like on um,start_vehicle,filler
+make it quieter,decrease_volume,clean
+so make it louder,increase_volume,filler
+turn on headlights,out_of_scope,dropped
+raise screen brightness,increase_brightness,dropped
+hpld the music,pause_music,char_noise
+"hey, stop the car",stop_vehicle,paraphrase
+stop playing muslc,pause_music,char_noise
+please previous the song,previous_song,paraphrase
+bright ness up plz,increase_brightness,asr_noise
+thoda zyada brightness karo,increase_brightness,clean
+ahtend the calling,pick_up_call,char_noise
+turn on the air vonwitioning,out_of_scope,char_noise
+increase the so bright,increase_brightness,asr_noise
+volumf up karo,increase_volume,char_noise
+make,decrease_volume,dropped
+kam karo,decrease_volume,dropped
+can you vehicle start please,start_vehicle,paraphrase
+um start playing musics,play_music,asr_noise
+turn up the volume,increase_volume,clean
+dismiss hmm the um call,decline_call,filler
+to next song,next_song,dropped
+do not disturb on karo,activate_dnd,clean
+like dnd on kar do,activate_dnd,asr_noise
+please how long until i reach home,out_of_scope,paraphrase
+add meeting to calendar,out_of_scope,clean
+"hey, decrease the fan speed",out_of_scope,paraphrase
+can you louder please,increase_volume,paraphrase
+next track please,next_song,clean
+the,out_of_scope,dropped
+hmm please to de activate dnd,deactivate_dnd,asr_noise
+can you volume kam karo,decrease_volume,paraphrase
+stop te wehicle,stop_vehicle,asr_noise
+decrease the volume,decrease_volume,clean
+stop,stop_vehicle,dropped
+set temperature to twenty two degrees,out_of_scope,asr_noise
+who is prime minister of india,out_of_scope,asr_noise
+"hey, set an alarm for six am",out_of_scope,paraphrase
+please answer it please,pick_up_call,paraphrase
+turn on the music,play_music,clean
+don't pick call,decline_call,asr_noise
+can you volume down karo,decrease_volume,paraphrase
+like next you know the song,next_song,filler
+higher wolume,increase_volume,asr_noise
+decline the call,decline_call,clean
+navigate to the airport,out_of_scope,clean
+start playing the song,play_music,hard_negative
+i want to play some music,play_music,paraphrase
+decrease the actually sounds,decrease_volume,filler
+back you know track please,previous_song,asr_noise
+stop playing musics,pause_music,asr_noise
+i want to quiet please,decrease_volume,paraphrase
+i want to send the call to voicemail,decline_call,paraphrase
+i want to remind me to buy milk,out_of_scope,paraphrase
+can you thoda kam bright karo,decrease_brightness,paraphrase
+bring the sound dowg,decrease_volume,char_noise
+shut down err wehicle,stop_vehicle,asr_noise
+etart the car,start_vehicle,char_noise
+aur bright karo you know hmm,increase_brightness,filler
+louder plz,increase_volume,asr_noise
+get the um music actually going,play_music,filler
+next you knov song,next_song,asr_noise
+set alarm for six am,out_of_scope,dropped
+turn down the,decrease_volume,dropped
+reject the cxll,decline_call,char_noise
+boost brightness basically,increase_brightness,filler
+start you know actually engine please,start_vehicle,filler
+gurn off the engine,stop_vehicle,char_noise
+kind of bring sound up,increase_volume,asr_noise
+vehicle srart please,start_vehicle,char_noise
+deactivate do not distu4b,deactivate_dnd,char_noise
+please brightness badhao,increase_brightness,paraphrase
+can you answer it please,pick_up_call,paraphrase
+can you engine off karo,stop_vehicle,paraphrase
+boost volume err,increase_volume,asr_noise
+next the song,next_song,clean
+on the music,play_music,clean
+thoda jyada brightness karo,increase_brightness,asr_noise
+wehicle start please,start_vehicle,asr_noise
+screen dim karo actually,decrease_brightness,asr_noise
+please hold the music,pause_music,paraphrase
+do not disturb off kqro,deactivate_dnd,char_noise
+svitch off do not dis turb,deactivate_dnd,asr_noise
+lover te volume,decrease_volume,asr_noise
+please decrease the sounds,decrease_volume,paraphrase
+up sound,increase_volume,asr_noise
+actually make it quieter,decrease_volume,filler
+gaana um sunao,out_of_scope,filler
+get the engine going,start_vehicle,hard_negative
+play um a podcast,out_of_scope,asr_noise
+dim kar do sfreen,decrease_brightness,char_noise
+please mujhe ghar le chalo,out_of_scope,paraphrase
+so send call to woicemail,decline_call,asr_noise
+bring the sound down,decrease_volume,clean
+plz start the engine,start_vehicle,asr_noise
+i aant do not disturb off,deactivate_dnd,char_noise
+i want to move to next song,next_song,paraphrase
+down um sound,decrease_volume,asr_noise
+pici the calling,pick_up_call,char_noise
+basically forward to next song,next_song,asr_noise
+less sound,decrease_volume,clean
+you know put on you know dnd mode,activate_dnd,filler
+you know turn down bright ness,decrease_brightness,asr_noise
+soft karo please,decrease_volume,clean
+i want to volume kam karo,decrease_volume,paraphrase
+"hey, receive the call",pick_up_call,paraphrase
+i want to traffic kaisa hai,out_of_scope,paraphrase
+go to the previous song in the playlist,previous_song,hard_negative
+increase display brightness like,increase_brightness,filler
+actually accept de call,pick_up_call,asr_noise
+i want to take the call,pick_up_call,paraphrase
+kitna lagega,out_of_scope,dropped
+act of ate dnd,activate_dnd,asr_noise
+lover um,decrease_volume,asr_noise
+put do not dis turb on plz,activate_dnd,asr_noise
+play kind of de musics,play_music,asr_noise
+activate dnd,activate_dnd,clean
+stop the music,pause_music,clean
+i want to stop the music,pause_music,paraphrase
+i want to open google maps,out_of_scope,paraphrase
+volume like down,decrease_volume,asr_noise
+search nearby,out_of_scope,asr_noise
+wolume down please,decrease_volume,asr_noise
+basically dim the screen,decrease_brightness,filler
+hmm reject the um call,decline_call,filler
+i want to raise sound,increase_volume,paraphrase
+please less brightness please,decrease_brightness,paraphrase
+paws the music,pause_music,asr_noise
+like activate dnd,activate_dnd,filler
+turn the car off,stop_vehicle,clean
+can you agla song chalao,next_song,paraphrase
+soften,decrease_brightness,dropped
+"hey, pick the call",pick_up_call,paraphrase
+lower so volume so,decrease_volume,filler
+i want do not disturb on,activate_dnd,clean
+i want to ansqer this call,pick_up_call,char_noise
+i want to andwer this call,pick_up_call,char_noise
+err call mom err,out_of_scope,filler
+move to next song,next_song,clean
+"hey, ignore the call",decline_call,paraphrase
+lower the screen brightness,decrease_brightness,clean
+please weather batao,out_of_scope,paraphrase
+pause the song,pause_music,clean
+i need less wolume,decrease_volume,asr_noise
+i want to reduce brightness,decrease_brightness,paraphrase
+"hey, abhi kitna time lagega",out_of_scope,paraphrase
+r3ject the calling,decline_call,char_noise
+can you lower volume,decrease_volume,paraphrase
+read the nevs,out_of_scope,asr_noise
+go to the previous err track hmm,previous_song,filler
+please turn off do not disturb,deactivate_dnd,paraphrase
+put do not disturb off plexse,deactivate_dnd,char_noise
+err translate hello uh to french,out_of_scope,filler
+car band kar do,stop_vehicle,clean
+"hey, decrease display brightness",decrease_brightness,paraphrase
+desctivate do not disturb,deactivate_dnd,char_noise
+connect the call hmm,pick_up_call,filler
+pichla song,previous_song,dropped
+"hey, do not disturb off karo",deactivate_dnd,paraphrase
+well turn on de engine,start_vehicle,asr_noise
+more well sound,increase_volume,asr_noise
+decrease the sounds,decrease_volume,clean
+basically volume badhao,increase_volume,asr_noise
+bright,increase_brightness,dropped
+"hey, turn up the brightness",increase_brightness,paraphrase
+uh reduce sound,decrease_volume,asr_noise
+can you set do not disturb,activate_dnd,paraphrase
+"hey, pause playback",pause_music,paraphrase
+thoda aur lohd karo,increase_volume,char_noise
+turn down de volume,decrease_volume,asr_noise
+turn on hazard livhts,out_of_scope,char_noise
+mute the music,pause_music,clean
+hmm quieter please,decrease_volume,asr_noise
+next hmm song plj,next_song,asr_noise

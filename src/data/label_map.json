@@ -1,0 +1,17 @@
+{
+  "activate_dnd": 0,
+  "deactivate_dnd": 1,
+  "decline_call": 2,
+  "pick_up_call": 3,
+  "play_music": 4,
+  "pause_music": 5,
+  "next_song": 6,
+  "previous_song": 7,
+  "increase_volume": 8,
+  "decrease_volume": 9,
+  "increase_brightness": 10,
+  "decrease_brightness": 11,
+  "start_vehicle": 12,
+  "stop_vehicle": 13,
+  "out_of_scope": 14
+}
