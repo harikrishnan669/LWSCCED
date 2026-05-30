@@ -141,6 +141,15 @@ LWSCCED/
 └── README.md
 ```
 
+## Project Approach
+
+The project began by creating a synthetic dataset using manually defined command examples for each supported intent. To make the dataset more realistic, command variations, paraphrases, simulated ASR errors, spelling variations, Indian-English expressions, and Out-of-Scope (OOS) queries were added. This helped the model learn to handle different ways users might express the same command.
+
+MiniLM was used to convert input text into semantic embeddings, allowing the system to understand the meaning of commands instead of relying on exact keyword matches. It was chosen because it provides good semantic understanding while remaining lightweight and efficient.
+
+These embeddings were used to train a Logistic Regression classifier, which was selected for its simplicity, fast inference, and suitability for edge devices. Finally, the model was exported to ONNX and optimized using INT8 quantization, resulting in a smaller, faster, and fully offline command classification system.
+
+
 ## Installation
 
 ### Clone the Repository
