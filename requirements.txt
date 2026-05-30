@@ -1,0 +1,13 @@
+numpy
+pandas
+scikit-learn
+sentence-transformers
+transformers
+torch
+joblib
+matplotlib
+onnx
+onnxruntime
+optimum
+skl2onnx
+nlpaug
