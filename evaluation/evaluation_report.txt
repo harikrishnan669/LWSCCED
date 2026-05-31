@@ -32,7 +32,7 @@ False Rejection Rate: 0.1306
 ============================================================
 NOISE ROBUSTNESS ANALYSIS
 ============================================================
-asr_noise            Accuracy: 0.8590 | Samples: 78`
+asr_noise            Accuracy: 0.8590 | Samples: 78
 char_noise           Accuracy: 0.5750 | Samples: 40
 clean                Accuracy: 0.9130 | Samples: 46
 dropped              Accuracy: 0.7619 | Samples: 21
