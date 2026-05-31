@@ -51,19 +51,11 @@ The system is designed to handle command variations and noisy transcriptions whi
 
 ## System Architecture
 
-```text
-ASR Text
-    ↓
-Text Normalization
-    ↓
-MiniLM Sentence Embedding
-    ↓
-Logistic Regression Classifier
-    ↓
-Confidence Threshold
-    ↓
-Command Prediction / REJECTED_OOS
-```
+<p align="center">
+  <picture>
+    <img src="lwsccedarchitecture.png" alt="Logo" width="1200">
+  </picture>
+</p>
 
 ---
 
