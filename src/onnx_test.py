@@ -10,10 +10,7 @@ from transformers import AutoTokenizer
 from utils import normalize_text
 
 
-# =========================================================
-# PATHS
-# =========================================================
-
+# paths to each
 BASE_DIR = Path("..")
 
 ENCODER_DIR = BASE_DIR / "onnx_encoder"
@@ -26,11 +23,7 @@ CLASSIFIER_PATH = (
 CONFIDENCE_THRESHOLD = 0.40
 MAX_LENGTH = 32
 
-
-# =========================================================
-# LOAD MODELS
-# =========================================================
-
+# load models
 print("Loading tokenizer...")
 
 tokenizer = AutoTokenizer.from_pretrained(
@@ -40,24 +33,20 @@ tokenizer = AutoTokenizer.from_pretrained(
 print("Loading encoder...")
 
 encoder_session = ort.InferenceSession(
-    str(ENCODER_DIR / "model_int8.onnx"),
+    str(ENCODER_DIR / "model_int8.onnx"), # load the INT8 quantized ONNX encoder model
     providers=["CPUExecutionProvider"]
 )
 
 print("Loading classifier...")
 
 classifier_session = ort.InferenceSession(
-    str(CLASSIFIER_PATH),
+    str(CLASSIFIER_PATH),    # loads the INT8 quantized ONNX classifier model
     providers=["CPUExecutionProvider"]
 )
 
 print("System Ready!")
 
-
-# =========================================================
-# EMBEDDING
-# =========================================================
-
+#convert an input text command into a semantic embedding vector using the ONNX version of MiniLM.
 def get_embedding(text: str) -> np.ndarray:
 
     tokens = tokenizer(
@@ -96,16 +85,12 @@ def get_embedding(text: str) -> np.ndarray:
     embedding = outputs[0]
 
     # Mean Pooling
-    if len(embedding.shape) == 3:
+    if len(embedding.shape) == 3:  #It averages all token embeddings into a single sentence embedding.
         embedding = embedding.mean(axis=1)
 
     return embedding.astype(np.float32)
 
-
-# =========================================================
-# PREDICTION
-# =========================================================
-
+# function takes normalized text, generates MiniLM embeddings, performs intent classification using the ONNX Logistic Regression model, applies confidence-based OOS rejection, and returns either the predicted command or REJECTED_OOS along with its confidence score.
 def predict_command(
     text: str
 ) -> Tuple[str, float]:
@@ -122,19 +107,13 @@ def predict_command(
         .name
     )
 
-    outputs = classifier_session.run(
+    outputs = classifier_session.run(  # Logistic Regression predicts the intent.
         None,
         {
             classifier_input_name:
             embedding
         }
     )
-
-    # --------------------------------------------------
-    # Case 1:
-    # sklearn-onnx output:
-    # [label_array, [{class1: prob1, class2: prob2}]]
-    # --------------------------------------------------
 
     if (
         len(outputs) >= 2
@@ -145,7 +124,7 @@ def predict_command(
 
         prob_dict = outputs[1][0]
 
-        predicted_label = max(
+        predicted_label = max( # find the best predicted label which has the highest probability
             prob_dict,
             key=prob_dict.get
         )
@@ -153,11 +132,6 @@ def predict_command(
         confidence = float(
             prob_dict[predicted_label]
         )
-
-    # --------------------------------------------------
-    # Case 2:
-    # Probability array output
-    # --------------------------------------------------
 
     else:
 
@@ -190,10 +164,7 @@ def predict_command(
         confidence
     )
 
-# =========================================================
-# MAIN
-# =========================================================
-
+# main function to read the input where correct label & confidence score is predicted
 def main() -> None:
 
     print("\nSemantic Command Classifier")
