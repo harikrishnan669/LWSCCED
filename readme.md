@@ -25,27 +25,27 @@ The system is designed to handle command variations and noisy transcriptions whi
 
 ### Core Commands
 
-| Command         |
-| --------------- |
-| activate_dnd    |
-| deactivate_dnd  |
-| decline_call    |
-| pick_up_call    |
-| play_music      |
-| pause_music     |
-| next_song       |
-| previous_song   |
-| increase_volume |
-| decrease_volume |
+| Command |
+| - |
+| activate do not disturb  |
+| deactivate do not disturb |
+| decline the call |
+| pick up the call |
+| play the music |
+| pause the music |
+| play the next song |
+| play the previous song |
+| increase the volume |
+| decrease the volume |
 
 ### Extension Commands
 
 | Command             |
 | ------------------- |
-| increase_brightness |
-| decrease_brightness |
-| start_vehicle       |
-| stop_vehicle        |
+| increase the brightness |
+| decrease the brightness |
+| start the vehicle      |
+| stop the vehicle       |
 
 ---
 
