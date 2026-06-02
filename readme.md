@@ -132,7 +132,7 @@ LWSCCED/
 │   └── utils.py
 │
 ├── requirements.txt
-└── README.md
+└── readme.md
 ```
 
 ## Project Approach
