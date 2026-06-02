@@ -124,7 +124,6 @@ LWSCCED/
 │   ├── generate_dataset.py
 │   ├── train.py
 │   ├── evaluate.py
-│   ├── test.py
 │   ├── benchmark.py
 │   ├── export_encoder_onnx.py
 │   ├── export_classifier_onnx.py
